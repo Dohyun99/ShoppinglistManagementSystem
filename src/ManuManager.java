@@ -55,7 +55,7 @@ public class ManuManager {
 		String list = in2.nextLine();
 		
 		System.out.println("edit list name");
-		String list = in2.nextLine();
+		String list2 = in2.nextLine();
 		
 		System.out.println("edit market price");
 		int marketprice=in2.nextInt();
