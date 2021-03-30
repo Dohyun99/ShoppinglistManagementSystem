@@ -11,7 +11,7 @@ public class ManuManager {
 			System.out.println("3. Edit shopping list");
 			System.out.println("4. Delete all");
 			System.out.println("6. Exit");
-			System.out.println("select menu(5을 누르면 메뉴를 새로고침합니다.");
+			System.out.println("select menu(5을 누르면 메뉴를 새로고침합니다.)");
 			n = in.nextInt();
 			
 			switch(n){
