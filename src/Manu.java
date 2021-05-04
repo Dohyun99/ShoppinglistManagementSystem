@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import list.Food;
 import list.List;
+import list.Listkind;
 import list.Stuff;
 
 public class Manu {
@@ -21,13 +22,13 @@ public class Manu {
 			System.out.println("1.food or 2.stuff");
 			kind = in.nextInt();
 			if(kind == 1) {
-				listn = new Food();
+				listn = new Food(Listkind.food);
 				listn.getUserinput(in);
 				lists.add(listn); //목록에 list항목을 추가
 				break;
 			}
 			else if(kind==2) {
-				listn = new Stuff();
+				listn = new Stuff(Listkind.stuff);
 				listn.getUserinput(in);
 				lists.add(listn); //목록에 list항목을 추가
 				break;
@@ -104,7 +105,7 @@ public class Manu {
 			System.out.println("no information.");
 			return;
 		}
-		else if(al.equals(("y"))) {
+		else if(al.equals("y")||al.equals("Y")) {
 			System.out.println("write list name");
 			String listname = in.next();
 			for (int i=0; i<lists.size(); i++) {// list의 사이즈를 다 순회 할 때 까지 반복

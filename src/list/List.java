@@ -12,6 +12,10 @@ public class List {
 	public List() {
 		
 	}
+	public List(Listkind kind) {
+		this.kind = kind;
+	}
+	
 	
 	public List(String list, int price, int price2, String locate){
 		this.list=list;
@@ -59,7 +63,17 @@ public class List {
 		this.locate = locate;
 	}
 	public void printin() {
-		System.out.println("list: "+ this.list+", market price: "+ this.price+", internet price: "+this.price2+", locate: "+this.locate+"\n");
+		String nkind = "none";
+		switch(this.kind) {
+		case food:
+			nkind = "food";
+			break;
+		case stuff:
+			nkind = "stuff";
+			break;
+		default:
+		}
+		System.out.println("kind of list: "+ nkind+", list: "+ this.list+", market price: "+ this.price+", internet price: "+this.price2+", locate: "+this.locate+"\n");
 	}
 	public void getUserinput(Scanner in) {
 		System.out.println("add Shopping list");

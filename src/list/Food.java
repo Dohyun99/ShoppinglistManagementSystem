@@ -3,6 +3,11 @@ package list;
 import java.util.Scanner;
 
 public class Food extends List {
+	
+	public Food(Listkind kind) {
+		super(kind);
+	}
+	
 	public void getUserinput(Scanner in) {
 		System.out.println("add food list");
 		String list = in.next();
