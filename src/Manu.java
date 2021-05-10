@@ -2,13 +2,15 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import list.AllList;
 import list.Food;
 import list.List;
+import list.Listinput;
 import list.Listkind;
 import list.Stuff;
 
 public class Manu {
-	ArrayList<List> lists = new ArrayList<List>(); //배열로 만들어줌
+	ArrayList<Listinput> lists = new ArrayList<Listinput>(); //배열로 만들어줌
 	Scanner in;
 	Manu(Scanner in){
 		this.in =in;
@@ -16,16 +18,16 @@ public class Manu {
 	
 	public void add() {
 		int kind=0;
-		List listn;
+		Listinput listn;
 		while (kind!=1 && kind!=2) {
 			System.out.println("select kind of list");
 			System.out.println("1.food or 2.stuff");
 			kind = in.nextInt();
 			if(kind == 1) {
-				listn = new Food(Listkind.food);
+				listn = new AllList(Listkind.food);
 				listn.getUserinput(in);
 				lists.add(listn); //목록에 list항목을 추가
-				break;
+				break; 
 			}
 			else if(kind==2) {
 				listn = new Stuff(Listkind.stuff);
@@ -57,7 +59,7 @@ public class Manu {
 		System.out.println("write list name");
 		String shlist = in.next();
 		for (int i=0; i<lists.size(); i++) {
-			List listm = lists.get(i);	
+			Listinput listm = lists.get(i);	
 			if(listm.getList().equals(shlist)) {
 				int n=0;
 				while (n<5) {

@@ -2,7 +2,7 @@ package list;
 
 import java.util.Scanner;
 
-public class Food extends List {
+public class Food extends List implements Listinput {
 	
 	public Food(Listkind kind) {
 		super(kind);
@@ -24,5 +24,19 @@ public class Food extends List {
 		System.out.println("add where you found lowest prices(ex) naver, 11ts, LotteMart)");
 		String locate=in.next();
 		this.setLocate(locate);
+	}
+	
+	public void printin() {
+		String nkind = "none";
+		switch(this.kind) {
+		case food:
+			nkind = "food";
+			break;
+		case stuff:
+			nkind = "stuff";
+			break;
+		default:
+		}
+		System.out.println("kind of list: "+ nkind+", list: "+ this.list+", market price: "+ this.price+", internet price: "+this.price2+", locate: "+this.locate+"\n");
 	}
 }

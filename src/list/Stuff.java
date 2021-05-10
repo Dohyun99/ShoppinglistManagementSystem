@@ -2,7 +2,7 @@ package list;
 
 import java.util.Scanner;
 
-public class Stuff extends List {
+public class Stuff extends List implements Listinput{
 	
 	public Stuff(Listkind kind) {
 		super(kind);
@@ -25,5 +25,18 @@ public class Stuff extends List {
 		String locate=in.next();
 		this.setLocate(locate);
 	}
-
+	public void printin() {
+		String nkind = "none";
+		switch(this.kind) {
+		case food:
+			nkind = "food";
+			break;
+		case stuff:
+			nkind = "stuff";
+			break;
+		default:
+		}
+		System.out.println("kind of list: "+ nkind+", list: "+ this.list+", market price: "+ this.price+", internet price: "+this.price2+", locate: "+this.locate+"\n");
+	}
+	
 }
