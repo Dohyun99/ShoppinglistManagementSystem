@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-05-25T08:05:28.375263Z</date>
+  <millis>1621929928375</millis>
+  <nanos>263000</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>EventLog.EventLog</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>1. Add shopping list</message>
+</record>
+<record>
+  <date>2021-05-25T08:05:29.930493200Z</date>
+  <millis>1621929929930</millis>
+  <nanos>493200</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>EventLog.EventLog</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>2. View shopping list</message>
+</record>
+</log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-05-25T08:05:35.514762800Z</date>
+  <millis>1621929935514</millis>
+  <nanos>762800</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>EventLog.EventLog</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>2. View shopping list</message>
+</record>
+</log>
