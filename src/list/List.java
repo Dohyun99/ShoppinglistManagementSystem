@@ -7,11 +7,12 @@ import java.util.Scanner;
 import Exceptions.Price2Exception;
 
 public abstract class List implements Listinput, Serializable {
-	/**
+
+/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1517676907665466967L;
-//List라는 객체를 생성하지 않는다.
+	//List라는 객체를 생성하지 않는다.
 	protected Listkind kind= Listkind.food;
 	protected String list;
 	protected String price;// int ->String

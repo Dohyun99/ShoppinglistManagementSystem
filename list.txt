@@ -42,3 +42,159 @@
   <message>2. View shopping list</message>
 </record>
 </log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-05-28T18:19:51.629666200Z</date>
+  <millis>1622225991629</millis>
+  <nanos>666200</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>EventLog.EventLog</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>1. Add shopping list</message>
+</record>
+<record>
+  <date>2021-05-28T18:19:53.134876700Z</date>
+  <millis>1622225993134</millis>
+  <nanos>876700</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>EventLog.EventLog</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>2. View shopping list</message>
+</record>
+</log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-05-28T18:20:05.720059Z</date>
+  <millis>1622226005720</millis>
+  <nanos>59000</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>EventLog.EventLog</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>2. View shopping list</message>
+</record>
+</log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-05-31T12:16:24.774435Z</date>
+  <millis>1622463384774</millis>
+  <nanos>435000</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>EventLog.EventLog</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>2. View shopping list</message>
+</record>
+</log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-05-31T12:56:13.840961900Z</date>
+  <millis>1622465773840</millis>
+  <nanos>961900</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>EventLog.EventLog</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>1. Add shopping list</message>
+</record>
+<record>
+  <date>2021-05-31T12:56:14.927938600Z</date>
+  <millis>1622465774927</millis>
+  <nanos>938600</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>EventLog.EventLog</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>2. View shopping list</message>
+</record>
+</log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-05-31T12:56:21.185451900Z</date>
+  <millis>1622465781185</millis>
+  <nanos>451900</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>EventLog.EventLog</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>2. View shopping list</message>
+</record>
+</log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-05-31T13:05:11.193107600Z</date>
+  <millis>1622466311193</millis>
+  <nanos>107600</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>EventLog.EventLog</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>2. View shopping list</message>
+</record>
+</log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>

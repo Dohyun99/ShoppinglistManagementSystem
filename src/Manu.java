@@ -5,18 +5,16 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import list.AllList;
-import list.Food;
-import list.List;
 import list.Listinput;
 import list.Listkind;
 import list.Stuff;
 
 public class Manu implements Serializable {
+
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -8165763390090820908L;
-	
+	private static final long serialVersionUID = 6868741288587409330L;
 	ArrayList<Listinput> lists = new ArrayList<Listinput>(); //배열로 만들어줌
 	transient Scanner in;// transient : 저장하고 싶지 않다는 뜻.
 	Manu(Scanner in){

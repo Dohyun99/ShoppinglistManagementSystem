@@ -14,7 +14,7 @@ public class ManuManager {
 	
 	static EventLog logger=new EventLog("list.txt");// txt파일 추가 0524
 	
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		//직열화: serialization
 		Scanner in = new Scanner(System.in);
 		Manu manu = getObject("manu.ser");//가져오기
@@ -61,9 +61,9 @@ public class ManuManager {
 				n=0;
 				System.out.println(n);
 			}
-		}				
+		}
 	}
-	
+
 	public static void showmanu() {
 		System.out.println("1. Add shopping list");
 		System.out.println("2. View shopping list");
