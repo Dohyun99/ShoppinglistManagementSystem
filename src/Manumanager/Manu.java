@@ -1,3 +1,4 @@
+package Manumanager;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -5,6 +6,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import list.AllList;
+import list.List;
 import list.Listinput;
 import list.Listkind;
 import list.Stuff;
@@ -22,8 +24,8 @@ public class Manu implements Serializable {
 	}
 	
 	public void add() {
-		int kind=0;
 		Listinput listn;
+		int kind=0;
 		while (kind!=1 && kind!=2) {
 			try {// try catch문 추가
 				System.out.println("select kind of list");
@@ -139,11 +141,24 @@ public class Manu implements Serializable {
 		return index;
 	}
 	
+	public int size() {
+		return lists.size();
+	}
+	
+	public Listinput get(int index) {
+		return (List) lists.get(index);
+	}
+	
 	public void showeditmanu() {//추가 0516
 					System.out.println("1. edit list name");
 					System.out.println("2. edit market price");
 					System.out.println("3. edit internet price");
 					System.out.println("4. edit locate");
 					System.out.println("5. Exit");
+	}
+
+	public void setScanner(Scanner in2) {
+		this.in=in2;
+		
 	}
 }

@@ -7,9 +7,13 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 
-public class Listadder extends JFrame {
+public class Listadder extends JPanel {
+	
+	WindowFrame frame;
 
-	public Listadder() {
+	public Listadder(WindowFrame frame) { 
+		this.frame=frame;
+		
 		JPanel pan1 = new JPanel();
 		pan1.setLayout(new SpringLayout());
 		
@@ -18,6 +22,13 @@ public class Listadder extends JFrame {
 		labellist.setLabelFor(fieldlist);//label과textfield를 넣어준다.
 		pan1.add(labellist);
 		pan1.add(fieldlist);
+		
+
+		JLabel labelname = new JLabel("List name: ", JLabel.TRAILING);
+		JTextField fieldname = new JTextField(10);
+		labellist.setLabelFor(fieldname);//label과textfield를 넣어준다.
+		pan1.add(labelname);
+		pan1.add(fieldname);
 
 		JLabel labelprice1 = new JLabel("Market price: ", JLabel.TRAILING);
 		JTextField fieldprice1 = new JTextField(10);
@@ -40,11 +51,10 @@ public class Listadder extends JFrame {
 		pan1.add(new JButton("save"));
 		pan1.add(new JButton("cancle"));
 		
-		AddressBook.makeCompactGrid(pan1, 5, 2, 6, 6, 6, 6);
+		AddressBook.makeCompactGrid(pan1, 6, 2, 6, 6, 6, 6);
 		
-		this.setSize(300,300);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setContentPane(pan1);
+
+		this.add(pan1);//
 		this.setVisible(true);
 		
 	}

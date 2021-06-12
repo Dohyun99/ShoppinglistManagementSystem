@@ -7,11 +7,19 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class Gui extends JFrame {
+import Listener.ButtonAdder;
+import Listener.ButtonDelete;
+import Listener.ButtonEditter;
+import Listener.ButtonView;
 
-	public Gui() {
-		this.setSize(300,300);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+public class Gui extends JPanel {
+	
+	WindowFrame frame;
+
+	public Gui(WindowFrame frame) {
+		this.frame=frame;
+		
+		this.setLayout(new BorderLayout());
 		
 		
 		JPanel panel1= new JPanel();
@@ -24,6 +32,12 @@ public class Gui extends JFrame {
 		JButton b4= new JButton("delete shopping list");
 		JButton b5= new JButton("exit");
 		
+		b1.addActionListener(new ButtonAdder(frame));
+		b2.addActionListener(new ButtonView(frame));
+		b3.addActionListener(new ButtonEditter(frame));
+		b4.addActionListener(new ButtonDelete(frame));
+		
+		 
 		panel1.add(l);
 		panel2.add(b1);
 		panel2.add(b2);
@@ -33,7 +47,6 @@ public class Gui extends JFrame {
 		
 		this.add(panel1, BorderLayout.NORTH);
 		this.add(panel2, BorderLayout.CENTER);
-		this.setVisible(true);
 		
 		
 		

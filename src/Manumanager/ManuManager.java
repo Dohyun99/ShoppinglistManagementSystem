@@ -1,3 +1,4 @@
+package Manumanager;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,6 +10,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import EventLog.EventLog;
+import gui.WindowFrame;
 
 public class ManuManager {
 	
@@ -21,18 +23,21 @@ public class ManuManager {
 		if(manu==null) {//
 			manu = new Manu(in);//
 		}
-		
+		else {
+			manu.setScanner(in);
+		}
+		WindowFrame f=new WindowFrame(manu);
 		selectmanu(in, manu);//추가0524
 		putObject(manu, "manu.ser");//seriallization 추가
 	}
 	
 	public static void selectmanu(Scanner in, Manu manu) {//추가0516
-		int n=0;
-		while (n<5) { 
+		int kind=0;
+		while (kind<5) { 
 			try {
 				showmanu();
-				n = in.nextInt(); //추가 0516
-				switch(n){
+				kind = in.nextInt(); //추가 0516
+				switch(kind){
 				case 1:
 					manu.add();
 					logger.log("1. Add shopping list");
@@ -58,11 +63,12 @@ public class ManuManager {
 				if(in.hasNext()) {//만약 next를 가지고 있으면 한번 더 처리한다.
 					in.next();
 				}
-				n=0;
-				System.out.println(n);
+				kind=0;
+				System.out.println(kind);
 			}
 		}
 	}
+	
 
 	public static void showmanu() {
 		System.out.println("1. Add shopping list");

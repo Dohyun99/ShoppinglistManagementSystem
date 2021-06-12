@@ -6,9 +6,17 @@ import Exceptions.Price2Exception;
 
 public interface Listinput {
 	
+	public void printin();
+	
 	public String getList();
 	
-	public void printin();
+	public Listkind getKind();
+	
+	public String getPrice();
+	
+	public String getPrice2();
+	
+	public String getLocate();
 	
 	public void setList(String list);
 	

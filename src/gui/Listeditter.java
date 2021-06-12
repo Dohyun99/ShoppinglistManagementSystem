@@ -7,8 +7,12 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 
-public class Listeditter extends JFrame {
-	public Listeditter() {
+public class Listeditter extends JPanel {
+	WindowFrame frame;
+	
+	public Listeditter(WindowFrame frame) {
+		this.frame=frame;
+		
 		JPanel pan1 = new JPanel();
 		pan1.setLayout(new SpringLayout());
 		
@@ -41,9 +45,8 @@ public class Listeditter extends JFrame {
 		
 		AddressBook.makeCompactGrid(pan1, 5, 2, 6, 6, 6, 6);
 		
-		this.setSize(400,300);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setContentPane(pan1);
+
+		this.add(pan1);
 		this.setVisible(true);
 		
 	}
