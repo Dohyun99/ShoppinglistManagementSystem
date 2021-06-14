@@ -86,8 +86,6 @@ public class ManuManager {
 			manu = (Manu) in.readObject();//(Manu)는 Manu 타입으로 형형변환 해주는것
 			in.close();
 			file.close();
-			
-			
 		} catch (FileNotFoundException e) {
 			return manu;
 		} catch (IOException e) {
@@ -97,7 +95,6 @@ public class ManuManager {
 			e.printStackTrace();
 		}
 		return manu;
-		
 	}
 	public static void putObject(Manu manu, String fileName) {
 		try { 

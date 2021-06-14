@@ -22,7 +22,7 @@ public class WindowFrame extends JFrame{
 		this.manu=manu;
 		
 		g=new Gui(this);
-		l=new Listadder(this);
+		l=new Listadder(this, this.manu);
 		e=new Listeditter(this);
 		v = new Listviewer(this, this.manu);
 		d=new ListDelete(this);

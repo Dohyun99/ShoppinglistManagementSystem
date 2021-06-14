@@ -13,8 +13,7 @@ public class Food extends List{
 		listname(in);
 		price(in);
 		price2(in);
-		locate(in);
-
+		locate(in); 
 	}
 	
 	public void printin() {

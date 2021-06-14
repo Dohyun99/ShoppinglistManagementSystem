@@ -23,6 +23,17 @@ public class Manu implements Serializable {
 		this.in =in;
 	}
 	
+	public void add(String list, String name, String p1, String p2, String lo) {
+		
+		Listinput listn = new AllList(Listkind.food);
+		listn.getUserinput(in);
+		lists.add(listn); //목록에 list항목을 추가
+	}
+	
+	public void add(Listinput listn) {
+		lists.add(listn); 
+	}
+	
 	public void add() {
 		Listinput listn;
 		int kind=0;

@@ -32,7 +32,7 @@ public class Gui extends JPanel {
 		JButton b4= new JButton("delete shopping list");
 		JButton b5= new JButton("exit");
 		
-		b1.addActionListener(new ButtonAdder(frame));
+		b1.addActionListener(new ButtonAdder(frame)); 
 		b2.addActionListener(new ButtonView(frame));
 		b3.addActionListener(new ButtonEditter(frame));
 		b4.addActionListener(new ButtonDelete(frame));

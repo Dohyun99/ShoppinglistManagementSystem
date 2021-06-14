@@ -20,7 +20,7 @@ public interface Listinput {
 	
 	public void setList(String list);
 	
-	public void setPrice(String price);
+	public void setPrice(String price) throws Price2Exception;
 	
 	public void setPrice2(String price2) throws Price2Exception;
 	

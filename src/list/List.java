@@ -53,7 +53,10 @@ public abstract class List implements Listinput, Serializable {
 		return price;
 	}
 
-	public void setPrice(String price) {
+	public void setPrice(String price) throws Price2Exception {
+		if(!price.contains("원")&&!price.equals("")) {
+			throw new Price2Exception();
+		}
 		this.price = price;
 	}
 
@@ -83,9 +86,17 @@ public abstract class List implements Listinput, Serializable {
 		this.setList(Listname);
 	}
 	public void price(Scanner in) {//추가 0516
-		System.out.println("market price");
-		String price=in.next();
-		this.setPrice(price);
+		String price = "";
+		while(!price.contains("원")) {
+			System.out.println("market price ex) 1000원");
+			price=in.next();
+			try {
+				this.setPrice(price);
+			} 
+			catch (Price2Exception e) {
+				System.out.println("incorrect market price formet. put the market price contains '원' 단위");
+			}
+		}
 	}
 	public void price2(Scanner in) {//추가 0516
 		String price2 = "";

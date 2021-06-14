@@ -17,6 +17,40 @@ public class Listviewer extends JPanel{
 
 	Manu manu;
 	
+	public Manu getManu() {
+		return manu;
+	}
+
+	public void setManu(Manu manu) {
+		this.manu = manu;
+		this.removeAll();
+		
+		DefaultTableModel model = new DefaultTableModel();
+		model.addColumn("kind of list");
+		model.addColumn("list");
+		model.addColumn("market price");
+		model.addColumn("intermet price");
+		model.addColumn("which is cheeper");
+		
+		for(int i=0; i <manu.size(); i++) {
+			Vector row = new Vector();
+			Listinput si=manu.get(i);
+			row.add(si.getKind());
+			row.add(si.getList());
+			row.add(si.getPrice());
+			row.add(si.getPrice2());
+			row.add(si.getLocate());
+			model.addRow(row);
+		}
+		
+		JTable table = new JTable(model);
+		JScrollPane sp = new JScrollPane(table);
+		
+		this.add(sp);
+		
+		
+	}
+
 	public Listviewer(WindowFrame frame, Manu manu) {
 		this.frame=frame;
 		this.manu=manu;
@@ -43,7 +77,7 @@ public class Listviewer extends JPanel{
 		JScrollPane sp = new JScrollPane(table);
 		
 		this.add(sp);
-
+		
 		
 	}
 }

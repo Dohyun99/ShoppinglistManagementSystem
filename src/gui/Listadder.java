@@ -7,12 +7,19 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 
+import Listener.Cancel;
+import Listener.ListAddListener;
+import Manumanager.Manu;
+
 public class Listadder extends JPanel {
 	
 	WindowFrame frame;
+	
+	Manu manu;
 
-	public Listadder(WindowFrame frame) { 
+	public Listadder(WindowFrame frame,  Manu manu) { 
 		this.frame=frame;
+		this.manu=manu;
 		
 		JPanel pan1 = new JPanel();
 		pan1.setLayout(new SpringLayout());
@@ -45,11 +52,17 @@ public class Listadder extends JPanel {
 		JLabel labelc = new JLabel("Which is cheeper?: ", JLabel.TRAILING);
 		JTextField fieldc = new JTextField(10);
 		labellist.setLabelFor(fieldc);//label과textfield를 넣어준다.
-		pan1.add(labelc);
+		JButton savebutton = new JButton("save");
+		JButton cancelbutton = new JButton("cancel");
+
+		
+		savebutton.addActionListener(new ListAddListener(fieldlist, fieldname, fieldprice1, fieldprice2, fieldc, manu));
+		cancelbutton.addActionListener(new Cancel(frame));
+		pan1.add(labelc); 
 		pan1.add(fieldc);
 		
-		pan1.add(new JButton("save"));
-		pan1.add(new JButton("cancle"));
+		pan1.add(savebutton);
+		pan1.add(cancelbutton);
 		
 		AddressBook.makeCompactGrid(pan1, 6, 2, 6, 6, 6, 6);
 		
